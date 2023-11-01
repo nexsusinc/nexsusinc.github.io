@@ -1,0 +1,895 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+background: radial-gradient(circle at top left,transparent 9%, #000000 10% ,#000000 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #000000 10% ,#000000 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #000000 10% ,#000000 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #000000 10% ,#000000 15% , transparent 16%),radial-gradient(circle, transparent 25%, #F6AE2D  26%),linear-gradient(45deg, transparent 46%, #000000 47%, #000000 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #000000 47%, #000000 52%, transparent 53%);
+        background-size: 1.5em 1.5em;
+        background-color: #F6AE2D;
+        opacity: 1
+}
+
+/*<-------------------------------------------------------------------- Header ---------------------------------------------------------------------------->*/
+
+#nav_header {
+  background-color: #001626;
+  background-image: url("../images_session_twelve/navandfooterbackground.png");
+  background-size: auto;
+  border-style: solid;
+  border-width: 7px;
+  border-bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#nav_logo {
+  position: absolute;
+  width: 100px;
+  margin-left: -70px;
+}
+
+
+#nav_company_name {
+  letter-spacing: 0.4em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  font-family: 'Stick No Bills', sans-serif;
+  color: #F1F1F1;
+  position: absolute;
+  left: -10px;
+  padding-top: 5px;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+}
+
+/*<-------------------------------------------------------------------- Search Bar ---------------------------------------------------------------------------->*/
+
+#nav_search_bar {
+  display: block;
+  margin: -15px;
+}
+
+#nav_search_bar input[type=text] {
+  width: 350px;
+  height: 30px;
+  position: relative;
+  top: -28px;
+  left: -3.5px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: none;
+}
+
+#nav_search_bar button {
+  background: none;
+  color: #000000;
+  top: -25px;
+  left: -40px;
+  position: relative;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/*<-------------------------------------------------------------------- Navbar ---------------------------------------------------------------------------->*/
+
+/* Style the top navigation bar */
+
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Style the topnav links */
+
+.topnav a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #f2f2f2;
+  font-family: monospace;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-family: monospace;
+  font-size: 14px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*<-------------------------------------------------------------------- Content ---------------------------------------------------------------------------->*/
+
+/* <--------------------- Introduction --------------------> */
+
+/* Style the Welcome Section */
+.welcome-section {
+  background-color: #001626;
+  background-image: url("../images_session_twelve/navandfooterbackground.png");
+  background-size: auto;
+  color: #FFF;
+  border: solid black;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.intro_container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.intro_heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro_text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.intro_btn_primary {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.intro_btn_primary:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+
+
+/* <--------------------- Catergories --------------------> */
+
+/* Style the Category Overview section */
+.category-overview {
+    background-color: #001626;
+    padding: 40px 0;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+.category-container {
+    max-width: 400;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: inherit;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Style the Category Grid */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    justify-content: center;
+}
+
+/* Style individual categories */
+.category {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.catergory_head {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.para {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+.top_button_links {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    position: relative;
+    top: 600px;
+    left: 130px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.bottom_button_links {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    position: relative;
+    top: 400px;
+    left: 130px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* <--------------------- Feature Products --------------------> */
+
+/* Style the Featured Products Section */
+.featured-products {
+  background-color: #001626;
+  background-image: url("../images_session_twelve/navandfooterbackground.png");
+  background-size: auto;
+  border: solid black;
+  padding: 40px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Style the container within the Featured Products Section */
+.featured-products-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style the main heading for Featured Products */
+.featured-products-heading-one {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Style the Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Style individual products */
+.product {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for individual products */
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Style the product images */
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px
+}
+
+/* Style the product title */
+.featured-products-heading-two {
+  margin-bottom: 10px;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* Style the product description */
+.featured-products-heading-text {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Style the product price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007BFF;
+  margin-bottom: 30px;
+}
+
+/* Style the "View Details" button */
+.btn-primary {
+  display: block;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for the "View Details" button */
+.btn-primary:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+
+/* <--------------------- Slideshow Code Begins --------------------> */
+
+.mySlidesOne {
+  display: none;
+}
+
+.mySlidesTwo {
+  display: none;
+}
+
+.mySlidesThree {
+  display: none;
+}
+
+.mySlidesFour {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+  border: solid;
+  max-height: 700px;
+}
+
+.slideshow-container-two {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container-two img {
+  border: solid;
+  max-height: 700px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* <--------------------- Slideshow Code End --------------------> */
+
+/* <--------------------- Card Content --------------------> */
+
+#aboutusheader{
+  text-align: center;
+}  
+
+#bestsellingheader{
+  text-align: center;
+}
+        
+#bestsellingimage{
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 7px;
+}
+        
+#aboutusheader{
+  text-align: center;
+}
+
+#aboutus_logo{
+  position: absolute;
+  width: 100px;
+  margin-left: -40px;
+}
+
+/* Create two unequal columns that floats next to each other */
+
+/* Left column one */
+
+.left_column_one {   
+  width: 75%;
+  float: left;
+}
+
+/* Right column one*/
+
+.right_column_one {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+/* Left column two*/
+
+.left_column_two {   
+  width: 75%;
+  float: right;
+}
+
+/* Right column two */
+
+.right_column_two {
+  float: left;
+  width: 25%;
+  padding-right: 20px;
+}
+
+
+/* Add a card effect for articles */
+
+.left_card_one {
+  margin-top: 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left_card_two {
+  margin-top: 32px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left_card_three {
+  margin-top: 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left_card_four {
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right_card_one {
+  border: solid;
+  padding: 20px;
+  height: 700px;
+  margin-top: 20px;
+  background-image: url("../images_session_twelve/rightcardimageone.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.right_card_two {
+  border: solid;
+  padding: 20px;
+  margin-top: 20px;
+  height: 700px;
+  background-image: url("../images_session_twelve/rightcardimagetwo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.right_card_four {
+  border: solid;
+  padding: 20px;
+  margin-top: 20px;
+  height: 500px;
+  background-image: url("../images_session_twelve/rightcardimagethree.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.right_card_five {
+  border: solid;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: whitesmoke;
+}
+
+.right_card_six {
+  border: solid;
+  padding: 20px;
+  margin-top: 20px;
+  height: 500px;
+  background-image: url("../images_session_twelve/rightcardimagefour.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Clear floats after the columns */
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+/*<-------------------------------------------------------------------- Forms ---------------------------------------------------------------------------->*/
+
+/* <--------------------- "Leave a Review" Form --------------------> */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* <--------------------- Login Form --------------------> */
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Sidebar Login Form styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 10;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sidebar button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #555;
+}
+
+.sidebar p {
+    margin-top: 10px;
+}
+
+/* Close button for the sidebar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*<-------------------------------------------------------------------- Decorations ---------------------------------------------------------------------------->*/
+
+#deco1 {
+  width: 475px;
+  float: left;
+}
+
+#deco2 {
+  width: 475px;
+  float: right;
+        }
+   
+#deco3 {
+  max-width: 600px;
+  margin-bottom: -6px;
+}
+
+#deco4 {
+  max-width: 600px;
+  margin-bottom: -6px;
+
+}
+
+
+  /*<-------------------------------------------------------------------- Footer ---------------------------------------------------------------------------->*/
+
+.footer {
+  border-style: solid;
+  border-width: 7px;
+  display: flex;
+  width: 100%;
+  background-size: contain;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 1;
+  background-image: radial-gradient(#000000 1.1500000000000001px, #001626 1.1500000000000001px);
+  background-size: 23px 23px;
+}
+
+.footer_bar_content_container {
+  max-width: auto;
+  position: relative;
+  left: -30px;
+  height: auto;
+  margin: auto;
+}
+
+#footer_company_name {
+  line-height: 21px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  font-size: 45px;
+  font-family: 'Stick No Bills', sans-serif;
+  color: #F1F1F1;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  padding: 0px 10px 0px 15px;
+}
+
+.footer-col h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 5px 5px 20px 40px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Stick No Bills', sans-serif;
+  position: relative;
+  cursor: pointer;
+  top: 30px;
+}
+
+.footer-col h4 a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 5px 5px 0px 25px;
+  font-weight: 500;
+  font-family: 'Stick No Bills', sans-serif;
+  position: relative;
+  cursor: none;
+  top: 30px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-weight: 500;
+  position: relative;
+  font-size: 11.5px;
+  text-transform: capitalize;
+  color: #F1F1F1;
+  font-style: normal;
+  top: 35px;
+  letter-spacing: 0.5px;
+  font-family: 'Stick No Bills', sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+  color: #F1F1F1;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #77A0A9; 
+}
+
+#footer_logo {
+  max-width: 150px;
+  height: 150px;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
